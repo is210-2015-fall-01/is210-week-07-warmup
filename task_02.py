@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """Evaluates truthy or falsy."""
 
+
 def bool_to_str(bval):
     """This fucntion evaluates from truthiness or falsiness.
     Args:
@@ -14,9 +15,9 @@ def bool_to_str(bval):
         >>> bool_to_str(True)
         'Yes'
     """
-    VAR1='Yes'
-    if bval==True:
-        VAR1='Yes'
+    varr = 'Yes'
+    if bval is True:
+        varr = 'Yes'
     else:
-        VAR1='No'
-    return VAR1
+        varr = 'No'
+    return varr
