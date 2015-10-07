@@ -1,6 +1,6 @@
 #!user/bin/env python
 # -*- coding: utf-8 -*-
-"""Module that tests to see if there are enough litterboxes"""
+"""Fibonacci series"""
 
 def fibonacci(maxint):
     """ Returns Fibonacci sequence as list.
@@ -19,6 +19,3 @@ def fibonacci(maxint):
         listresults.append(b)
         a, b = b, a + b
     return listresults
-
-
-print fibonacci(100)
