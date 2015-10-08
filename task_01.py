@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """Fibonacci series"""
 
+
 def fibonacci(maxint):
     """ Returns Fibonacci sequence as list.
     Arguments:
@@ -12,10 +13,10 @@ def fibonacci(maxint):
         fibonacci(100)
         >>>[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
     """
-    a, b = 0, 1
+    var_a, var_b = 0, 1
     listresults = []
 
-    while b < maxint:
-        listresults.append(b)
-        a, b = b, a + b
+    while var_a < maxint:
+        listresults.append(var_a)
+        var_a, var_b = var_b, var_a + var_b
     return listresults
