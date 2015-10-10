@@ -11,26 +11,27 @@ def lexicographics(to_analyze):
 
     Args:
         to_analyze(int): required string
-        
+
     Returns:
         tuple: with 3-values
             (
-            int1=max number of words per line, 
+            int1=max number of words per line,
             int2=min number of words per line,
             decimal=average number of words per line
             )
-            
-    Examples:
 
+    Examples:
+        >>> import task_03
+        >>> import data
+        >>> task_03.lexicographics(data.SHAKESPEARE)
+        (12, 5, Decimal('8.14'))
     """
-    VAR1=speech.split('\n')
-    
-    VAR2=VAR2.split()
-    for int1 in LIST1:
-        if len(VAR3)>len(VAR2):
-            VAR3=VAR2
-            int1=len(VAR3)
-        else:
-            VAR2=VAR2
-            int1=len(VAR2)
-        
+    linesplit = to_analyze.splitlines()
+    my_val = []
+
+    for words in linesplit:
+        my_val.append(len(words.split()))
+        maxvar = max(my_val)
+        minvar = min(my_val)
+        avgvar = decimal.Decimal(sum(my_val))/len(linesplit)
+    return(maxvar, minvar, avgvar)
