@@ -10,18 +10,17 @@ def lexicographics(to_analyze):
 
     This function will return maximum, minimum, and average length of words
     as well as constructing simple data set.
-    
+
     Args:
         to_analyze(str): loop through data.
-    
+
     Returns:
-        returns max, min, and avarge lenth. 
-    
+        returns max, min, and avarge lenth.
+
     Example:
         >>> import task_03
         >>> task_03.lexicographics('''Don't stop believing,
         Hold on to that feeling.''')
-
         >>> lexicographics(data.SHAKESPEARE)
         (12, 5, Decimal('8.14'))
     """
