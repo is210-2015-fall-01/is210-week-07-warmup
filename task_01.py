@@ -5,12 +5,21 @@
 def fibonacci(maxint):
     """
     Args:
-        maxint
+        maxint (int): when loop ends
+
     Returns:
+        list up to maxint number
+        
     Examples:
-    
+        >>> fibonacci(50)
+        [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+        >>> fibonacci(10)
+        [0, 1, 1, 2, 3, 5, 8]
     """
-    a, b = 0, 1
-    while b<maxint:
-        print(b)
-        a, b = b, a+b
+    lastnum, curnum = 0, 1
+    numlist = [lastnum]
+    
+    while curnum<maxint:
+        numlist.append(curnum)
+        lastnum, curnum = curnum, lastnum + curnum
+    return numlist
