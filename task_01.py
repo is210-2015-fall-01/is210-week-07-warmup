@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """Fibonacci series."""
 
+
 def fibonacci(maxint):
     """
     Args:
@@ -9,7 +10,6 @@ def fibonacci(maxint):
 
     Returns:
         list up to maxint number
-        
     Examples:
         >>> fibonacci(50)
         [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
@@ -18,8 +18,8 @@ def fibonacci(maxint):
     """
     lastnum, curnum = 0, 1
     numlist = [lastnum]
-    
-    while curnum<maxint:
+
+    while curnum < maxint:
         numlist.append(curnum)
         lastnum, curnum = curnum, lastnum + curnum
     return numlist
