@@ -27,4 +27,4 @@ def fibonacci(maxint):
     while curnum < maxint:
         mylist.append(curnum)
         lastnum, curnum = curnum, lastnum + curnum
-    print mylist
+    return mylist
